@@ -143,7 +143,7 @@ build .
 # y usa todo lo que hay ahí en tiempo de build
 ```
 
-Con el comando build hace una imagen, y a partir de la iamgen hace un contenedor.
+Con el comando build hace una imagen, y a partir de la imagen hace un contenedor.
 
 ```bash
 COPY ['.', 'usr/src/'] # parte del contenxto de build
@@ -212,7 +212,7 @@ docker-compose.yml <-- en este archivo.
 
 - volumes: una lista de descripcion de como queremos usar los volumenes
   ```bash
-      - .:/usr/src #que vaya a los directorios
+      - .:/usr/src #que vaya a los directorioshacer una correcion
       # QUE ESTO NO ME LO TOQUE NO SE REISCRIBA NI NADA
       - /usr/src/node_modules
       # esto lo que hace es que solo se buildee a menos que haya algo nuevo
@@ -249,7 +249,7 @@ docker-compose down # tumbar/eliminar los servicios
 ```
 
 ```bash
-docker-compose scale <name_services>=5 # que escale a a cinco contenedores.
+docker-compose scale <name_services>=5 # que escale a cinco contenedores.
 ```
 
 ## Docker ignore ⬛
